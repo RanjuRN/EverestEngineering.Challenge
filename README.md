@@ -63,8 +63,8 @@ dotnet test
 ## Code Coverage Testing
 This application was developed on VS 2022 community edition hence the built-in functionality was not available to test the code coverage.
 Instead two open source packages were used:-
-- Coverlet `https://github.com/coverlet-coverage/coverlet`
-- ReportGenerator `https://github.com/danielpalme/ReportGenerator`
+- [Coverlet](https://github.com/coverlet-coverage/coverlet)
+- [ReportGenerator](`https://github.com/danielpalme/ReportGenerator)
 
 ReportGenerator was used to generate the reports from the coverlet output.
 ```
