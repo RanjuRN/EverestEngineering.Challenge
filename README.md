@@ -12,16 +12,16 @@ A .NET 8 console application for estimating delivery costs and times for package
 ## Folder Structure
 
 Everest.CodingChallenge.CourierService/ 
-├── Business/         # Core business logic (calculators, etc.) 
-├── Challenges/       # Challenge orchestrators (cost/time estimation) 
-├── Controllers/      # Challenge flow controller 
-├── Helpers/          # Dependency injection and utility classes 
-├── Interfaces/       # Service and challenge interfaces 
-├── Model/            # Domain models (Package, Vehicle, etc.) 
-├── Services/         # Service implementations (OfferCode, DeliveryPlanner, etc.) 
-├── Configs/          # External configuration files (OfferCodes.json) 
-├── appsettings.json  # Application configuration 
-├── Program.cs        # Application entry point
+-├── Business/         # Core business logic (calculators, etc.) 
+-├── Challenges/       # Challenge orchestrators (cost/time estimation) 
+-├── Controllers/      # Challenge flow controller 
+-├── Helpers/          # Dependency injection and utility classes 
+-├── Interfaces/       # Service and challenge interfaces 
+-├── Model/            # Domain models (Package, Vehicle, etc.) 
+-├── Services/         # Service implementations (OfferCode, DeliveryPlanner, etc.) 
+-├── Configs/          # External configuration files (OfferCodes.json) 
+-├── appsettings.json  # Application configuration 
+-├── Program.cs        # Application entry point
 
 
 ## Getting Started
