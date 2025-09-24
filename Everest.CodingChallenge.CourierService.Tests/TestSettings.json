@@ -1,0 +1,14 @@
+{
+ 
+  "Model": {
+    "OfferCodes": {
+      "ConfigFilePath": "TestData/OfferCodes.json"
+    }
+  },
+  "DeliveryPlannerService": {
+    "VehicleCount":1,   
+    "MaxSpeed": 90,
+    "MaxCarryWeight": 150
+  }
+
+}

@@ -1,0 +1,14 @@
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\bin\Release\net8.0\Everest.CodingChallenge.CourierService.exe
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\bin\Release\net8.0\Everest.CodingChallenge.CourierService.deps.json
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\bin\Release\net8.0\Everest.CodingChallenge.CourierService.runtimeconfig.json
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\bin\Release\net8.0\Everest.CodingChallenge.CourierService.dll
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\bin\Release\net8.0\Everest.CodingChallenge.CourierService.pdb
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.GeneratedMSBuildEditorConfig.editorconfig
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.AssemblyInfoInputs.cache
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.AssemblyInfo.cs
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.csproj.CoreCompileInputs.cache
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.dll
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\refint\Everest.CodingChallenge.CourierService.dll
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.pdb
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\Everest.CodingChallenge.CourierService.genruntimeconfig.cache
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Release\net8.0\ref\Everest.CodingChallenge.CourierService.dll

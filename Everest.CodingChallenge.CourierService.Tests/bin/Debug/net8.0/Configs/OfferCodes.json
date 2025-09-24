@@ -1,0 +1,34 @@
+[
+  {
+    "Code": "OFR001",
+    "DiscountPercentage": 10.0,
+    "MinWeight": 70.0,
+    "MaxWeight": 200.0,
+    "MinDistance": 0.0,
+    "MaxDistance": 199.0
+  },
+  {
+    "Code": "OFR002",
+    "DiscountPercentage": 7.0,
+    "MinWeight": 100.0,
+    "MaxWeight": 250.0,
+    "MinDistance": 50.0,
+    "MaxDistance": 150.0
+  },
+  {
+    "Code": "OFFR002",
+    "DiscountPercentage": 7.0,
+    "MinWeight": 100.0,
+    "MaxWeight": 250.0,
+    "MinDistance": 50.0,
+    "MaxDistance": 150.0
+  },
+  {
+    "Code": "OFR003",
+    "DiscountPercentage": 5.0,
+    "MinWeight": 10.0,
+    "MaxWeight": 150.0,
+    "MinDistance": 50.0,
+    "MaxDistance": 250.0
+  }
+]

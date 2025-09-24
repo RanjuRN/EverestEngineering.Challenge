@@ -1,0 +1,27 @@
+[
+  {
+    "Code": "OFRDiwali",
+    "DiscountPercentage": 15.5,
+    "MinWeight": 70.0,
+    "MaxWeight": 200.0,
+    "MinDistance": 0.0,
+    "MaxDistance": 199.0
+  },
+  {
+    "Code": "OFRHoli",
+    "DiscountPercentage": 7.8,
+    "MinWeight": 100.0,
+    "MaxWeight": 250.0,
+    "MinDistance": 23.0,
+    "MaxDistance": 150.0
+  },
+  {
+    "Code": "OFFRAnnual",
+    "DiscountPercentage": 70,
+    "MinWeight": 100.8,
+    "MaxWeight": 250.5,
+    "MinDistance": 50.0,
+    "MaxDistance": 150.0
+  }
+ 
+]
