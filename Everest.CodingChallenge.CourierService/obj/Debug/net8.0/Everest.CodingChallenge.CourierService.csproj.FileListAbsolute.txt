@@ -51,3 +51,4 @@ E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.Codin
 E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Debug\net8.0\Everest.CodingChallenge.CourierService.pdb
 E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Debug\net8.0\Everest.CodingChallenge.CourierService.genruntimeconfig.cache
 E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Debug\net8.0\ref\Everest.CodingChallenge.CourierService.dll
+E:\Learning\SampleLearnings\Everest.CodingChallenge.CourierService\Everest.CodingChallenge.CourierService\obj\Debug\net8.0\Everest.CodingChallenge.CourierService.sourcelink.json

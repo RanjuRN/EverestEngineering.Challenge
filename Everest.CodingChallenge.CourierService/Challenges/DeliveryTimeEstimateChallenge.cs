@@ -14,7 +14,9 @@ namespace Everest.CodingChallenge.CourierService.Challenges
         IDeliveryPlannerServiceOperations deliveryPlannerServiceOperations;
         IConfiguration configuration;
         List<Package> packages;
-        public DeliveryTimeEstimateChallenge(IConfiguration configuration, IOfferCodeSeviceOperations offerCodeSevice, List<Package> packages = null,IDeliveryPlannerServiceOperations deliveryPlannerServiceOperations = null)
+        IIOServiceOperations consoleOperations;
+
+        public DeliveryTimeEstimateChallenge(IConfiguration configuration, IOfferCodeSeviceOperations offerCodeSevice, List<Package> packages = null,IDeliveryPlannerServiceOperations deliveryPlannerServiceOperations = null, IIOServiceOperations consoleOperations = null)
         {
             this.configuration = configuration;
             // Pre populate Offer Codes
@@ -24,6 +26,9 @@ namespace Everest.CodingChallenge.CourierService.Challenges
             {
                 this.deliveryPlannerServiceOperations = deliveryPlannerServiceOperations;
             }
+
+            this.consoleOperations = consoleOperations ?? new IOConsoleOperations();
+
         }
        
         public bool ChallengeSolved() 
@@ -36,30 +41,18 @@ namespace Everest.CodingChallenge.CourierService.Challenges
         {
             Console.WriteLine("Enter Packages info in the format(first) - base_delivery_cost no_of_packges then on each separate line:- pkg_id1 pkg_weight1_in_kg distance1_in_km offer_code1");
             Console.WriteLine("After all the package info entered input info in the format- no_of_vehicles max_speed max_carriable_weight");
-            string input = Console.ReadLine();
-            string[] inputs = input.Split(' ');
-            double baseDeliveryCost = Convert.ToDouble(inputs[0]);
-            int noOfPackages = Convert.ToInt32(inputs[1]);
-                        
-            for (int i = 0; i < noOfPackages; i++)
-            {
-                string packageInput = Console.ReadLine();
-                string[] packageInputs = packageInput.Split(' ');
-                Package package = new Package()
-                {
-                    Id = packageInputs[0],
-                    Weight = Convert.ToDouble(packageInputs[1]),
-                    DistanceToDestination = Convert.ToDouble(packageInputs[2]),
-                    ApplicableOfferCode = packageInputs.Length > 3 ? packageInputs[3] : null
-                };
-                packages.Add(package);
-            }
 
-            string vehicleParamInputs = Console.ReadLine();
-            string[] vehicleParams = vehicleParamInputs.Split(' ');
-            int noOfVehicles = Convert.ToInt32(vehicleParams[0]);
-            double maxSpeed = Convert.ToDouble(vehicleParams[1]);
-            double maxCarryWeight = Convert.ToDouble(vehicleParams[2]);
+            double baseDeliveryCost;
+            int noOfPackages;
+            GetInputPackageParameters(out baseDeliveryCost, out noOfPackages);
+
+            packages = ReadPackages(noOfPackages, consoleOperations);
+          
+            int noOfVehicles;
+            double maxSpeed;
+            double maxCarryWeight;
+
+            ReadVehicleParameters(consoleOperations, out noOfVehicles, out maxSpeed, out maxCarryWeight);
 
             deliveryPlannerServiceOperations = new DeliveryPlannerServiceScheduler(noOfVehicles, packages, maxSpeed, maxCarryWeight, configuration);
             var packagesbyDeliveryTime = deliveryPlannerServiceOperations.GetPackagesDeliveriesByDeliveryTime();
@@ -77,6 +70,50 @@ namespace Everest.CodingChallenge.CourierService.Challenges
                 Console.WriteLine($"{package.Id} {Math.Truncate(discount)} {totalCost} {deliveryTime.ToString("F2")}"); //delivery time 2 digits after decimal
             }
 
+        }
+
+        public void GetInputPackageParameters(out double baseDeliveryCost, out int noOfPackages)
+        {
+            //string input = Console.ReadLine();
+            string input = consoleOperations.ReadLine();
+            string[] inputs = input.Split(' ');
+            baseDeliveryCost = Convert.ToDouble(inputs[0]);
+            noOfPackages = Convert.ToInt32(inputs[1]);
+        }
+
+        /// <summary>
+        /// Reads package input from the provided IIOServiceOperations.
+        /// </summary>
+        public List<Package> ReadPackages(int noOfPackages, IIOServiceOperations ioService)
+        {
+
+            var packageList = new List<Package>();
+            for (int i = 0; i < noOfPackages; i++)
+            {
+                string packageInput = ioService.ReadLine();
+                string[] packageInputs = packageInput.Split(' ');
+                var package = new Package()
+                {
+                    Id = packageInputs[0],
+                    Weight = Convert.ToDouble(packageInputs[1]),
+                    DistanceToDestination = Convert.ToDouble(packageInputs[2]),
+                    ApplicableOfferCode = packageInputs.Length > 3 ? packageInputs[3] : null
+                };
+                packageList.Add(package);
+            }
+            return packageList;
+        }
+
+        /// <summary>
+        /// Reads vehicle parameters from the provided IIOServiceOperations.
+        /// </summary>
+        public void ReadVehicleParameters(IIOServiceOperations ioService, out int noOfVehicles, out double maxSpeed, out double maxCarryWeight)
+        {
+            string vehicleParamInputs = ioService.ReadLine();
+            string[] vehicleParams = vehicleParamInputs.Split(' ');
+            noOfVehicles = Convert.ToInt32(vehicleParams[0]);
+            maxSpeed = Convert.ToDouble(vehicleParams[1]);
+            maxCarryWeight = Convert.ToDouble(vehicleParams[2]);
         }
     }
 }

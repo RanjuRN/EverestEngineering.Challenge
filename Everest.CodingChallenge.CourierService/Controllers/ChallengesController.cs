@@ -14,7 +14,8 @@ namespace Everest.CodingChallenge.CourierService.Controller
     public class ChallengesController: IChallengesControllerOperations
     {
         IConfiguration configuration;
-        IChallengeOperations challenge1,challenge2;
+        IDeliveryCostEstimateChallengeOperations challenge1;
+        IDeliveryTimeEstimateChallengeOperations challenge2;
 
         public ChallengesController(IConfiguration config, IDeliveryCostEstimateChallengeOperations challenge1, IDeliveryTimeEstimateChallengeOperations challenge2)
         {
@@ -26,8 +27,9 @@ namespace Everest.CodingChallenge.CourierService.Controller
 
         public void OrchestrateChallenges()
         {
-            // First Challenge inputs and response       
-            //challenge1.StartChallenge();
+            //First Challenge inputs and response       
+            challenge1.StartChallenge();
+
             // Second Challenge inputs and response
             challenge2.StartChallenge();
         }

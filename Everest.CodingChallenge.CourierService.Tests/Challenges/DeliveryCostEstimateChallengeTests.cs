@@ -73,5 +73,27 @@ public class DeliveryCostEstimateChallengeTests
 
     }
 
-    
+    [Test]
+    public void GetInputPackageParameters_ParsesInputCorrectly()
+    {
+        // Arrange
+        var mockConsoleOperations = new Mock<IIOServiceOperations>();
+        mockConsoleOperations.Setup(x => x.ReadLine()).Returns("100 3");        
+        List<Model.Package> packages = new List<Model.Package>
+        {
+            new Model.Package { Id = "PKG1", Weight = 50, DistanceToDestination = 30, ApplicableOfferCode = "OFR001" },
+            new Model.Package { Id = "PKG2", Weight = 75, DistanceToDestination = 125, ApplicableOfferCode = "OFR002" },
+            new Model.Package { Id = "PKG3", Weight = 175, DistanceToDestination = 100, ApplicableOfferCode = "OFR003" }
+        };
+        var challenge = new DeliveryCostEstimateChallenge(configuration,packages, consoleOperations: mockConsoleOperations.Object);
+
+        // Act
+        challenge.GetInputPackageParameters(out double baseDeliveryCost, out int noOfPackages);
+
+        // Assert
+        Assert.AreEqual(100, baseDeliveryCost);
+        Assert.AreEqual(3, noOfPackages);
+    }
+
+
 }

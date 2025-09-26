@@ -214,15 +214,16 @@ var assemblies = [
     "name": "Everest.CodingChallenge.CourierService",
     "classes": [
       { "name": "Everest.CodingChallenge.CourierService.Business.DeliveryCostCalculator", "rp": "Everest.CodingChallenge.CourierService_DeliveryCostCalculator.html", "cl": 13, "ucl": 0, "cal": 13, "tl": 32, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Everest.CodingChallenge.CourierService.Business.OfferDiscountCalculator", "rp": "Everest.CodingChallenge.CourierService_OfferDiscountCalculator.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 58, "cb": 9, "tb": 12, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Everest.CodingChallenge.CourierService.Controller.ChallengesController", "rp": "Everest.CodingChallenge.CourierService_ChallengesController.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 36, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Everest.CodingChallenge.CourierService.DeliveryCostEstimateChallenge", "rp": "Everest.CodingChallenge.CourierService_DeliveryCostEstimateChallenge.html", "cl": 17, "ucl": 37, "cal": 54, "tl": 93, "cb": 8, "tb": 20, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Everest.CodingChallenge.CourierService.DeliveryTimeEstimateChallenge", "rp": "Everest.CodingChallenge.CourierService_DeliveryTimeEstimateChallenge.html", "cl": 14, "ucl": 39, "cal": 53, "tl": 82, "cb": 3, "tb": 10, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "Everest.CodingChallenge.CourierService.Helpers.ServiceDependeciesCollectionManager", "rp": "Everest.CodingChallenge.CourierService_ServiceDependeciesCollectionManager.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 31, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Business.OfferDiscountCalculator", "rp": "Everest.CodingChallenge.CourierService_OfferDiscountCalculator.html", "cl": 26, "ucl": 0, "cal": 26, "tl": 58, "cb": 12, "tb": 12, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Challenges.DeliveryCostEstimateChallenge", "rp": "Everest.CodingChallenge.CourierService_DeliveryCostEstimateChallenge.html", "cl": 82, "ucl": 0, "cal": 82, "tl": 153, "cb": 19, "tb": 26, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Challenges.DeliveryTimeEstimateChallenge", "rp": "Everest.CodingChallenge.CourierService_DeliveryTimeEstimateChallenge.html", "cl": 45, "ucl": 20, "cal": 65, "tl": 119, "cb": 8, "tb": 12, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Controller.ChallengesController", "rp": "Everest.CodingChallenge.CourierService_ChallengesController.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 38, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Helpers.ServiceDependeciesCollectionManager", "rp": "Everest.CodingChallenge.CourierService_ServiceDependeciesCollectionManager.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 32, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Everest.CodingChallenge.CourierService.Model.DeliveryPlannerServiceOptions", "rp": "Everest.CodingChallenge.CourierService_DeliveryPlannerServiceOptions.html", "cl": 3, "ucl": 0, "cal": 3, "tl": 16, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Everest.CodingChallenge.CourierService.Model.OfferCodes", "rp": "Everest.CodingChallenge.CourierService_OfferCodes.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 18, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Everest.CodingChallenge.CourierService.Model.Vehicle", "rp": "Everest.CodingChallenge.CourierService_Vehicle.html", "cl": 2, "ucl": 0, "cal": 2, "tl": 15, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Everest.CodingChallenge.CourierService.Services.DeliveryPlannerServiceScheduler", "rp": "Everest.CodingChallenge.CourierService_DeliveryPlannerServiceScheduler.html", "cl": 94, "ucl": 13, "cal": 107, "tl": 182, "cb": 24, "tb": 32, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Everest.CodingChallenge.CourierService.Services.IOConsoleOperations", "rp": "Everest.CodingChallenge.CourierService_IOConsoleOperations.html", "cl": 0, "ucl": 6, "cal": 6, "tl": 25, "cb": 0, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Everest.CodingChallenge.CourierService.Services.OfferCodeService", "rp": "Everest.CodingChallenge.CourierService_OfferCodeService.html", "cl": 59, "ucl": 0, "cal": 59, "tl": 98, "cb": 5, "tb": 6, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "Program", "rp": "Everest.CodingChallenge.CourierService_Program.html", "cl": 0, "ucl": 11, "cal": 11, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
@@ -233,23 +234,9 @@ var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": 
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
-      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
-      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
 ];
 
 var riskHotspots = [
-  {
-    "assembly": "Everest.CodingChallenge.CourierService", "class": "Everest.CodingChallenge.CourierService.DeliveryCostEstimateChallenge", "reportPath": "Everest.CodingChallenge.CourierService_DeliveryCostEstimateChallenge.html", "methodName": "StartChallenge()", "methodShortName": "StartChallenge()", "fileIndex": 0, "line": 56,
-    "metrics": [
-      { "value": 42, "exceeded": true },
-      { "value": 6, "exceeded": false },
-    ]},
-  {
-    "assembly": "Everest.CodingChallenge.CourierService", "class": "Everest.CodingChallenge.CourierService.DeliveryTimeEstimateChallenge", "reportPath": "Everest.CodingChallenge.CourierService_DeliveryTimeEstimateChallenge.html", "methodName": "StartChallenge()", "methodShortName": "StartChallenge()", "fileIndex": 0, "line": 36,
-    "metrics": [
-      { "value": 42, "exceeded": true },
-      { "value": 6, "exceeded": false },
-    ]},
 ];
 
 var branchCoverageAvailable = true;

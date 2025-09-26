@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Everest.CodingChallenge.CourierService.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5aef89336a8659104dc3131cc9f411e97ec0ea9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Everest.CodingChallenge.CourierService.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Everest.CodingChallenge.CourierService.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
