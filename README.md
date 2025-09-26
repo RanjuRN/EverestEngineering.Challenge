@@ -72,7 +72,7 @@ To run the code coverage tests, use the following command in the terminal:
 - dotnet test --collect:"XPlat Code Coverage" (Generates coverage.cobertura.xml file in the TestResults folder of the Test project as a subfolder(named with an auto generated guid) )
 - reportgenerator -reports:"<Path to the cobertura file>" -targetdir:"<Path to the output folder>" -reporttypes:Html (Generates the html report in the specified output folder with an index.html file that shows the code coverage as a summary)
  ```
-
+In here the folder used to generate the reports was added to the folder CodeCoverageReports in the root of the solution and the index.html file shows the summary of the code coverage.
 ## License
 
 This project is for educational and demonstration purposes.
